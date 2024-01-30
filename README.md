@@ -1,11 +1,35 @@
 # React + Vite
+To run a Vite React project locally, you can follow these steps:
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Open your terminal and navigate to the project directory.
 
-Currently, two official plugins are available:
+- Install the project dependencies by running the command:
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+npm install
+
+- Once the dependencies are installed, you can start the development server by running:
+
+npm run dev
+
+This will start the development server and you can view your project by opening http://localhost:5000 in your web browser.
+
+If you want to run the project in production mode, you can build the project and then serve it. Here’s how you can do it:
+
+- Build the project by running:
+
+npm run build
+
+- After the build is complete, you can serve it by running:
+
+npm run serve
+
+This will serve your built project locally.
+
+Please make sure that you have Node.js version 18+ installed on your system as Vite requires it. 
+
+# If you encounter any issues, feel free to ask!
+
+Contact: manmohansingh8422@gmail.com
 
 # React Task Tracker Home page
 ![01](https://github.com/ManMohanSingh031/Task-Tracker/assets/98742502/5d1272d7-cfe7-45f0-9fb3-fd239fbc76c9)
