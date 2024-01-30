@@ -26,12 +26,12 @@ const AddTask = ({ onAddTask, filter, onFilterChange }) => {
   };
 
   return (
-    <div className="flex flex-col justify-between items-center bg-gray-200 p-4">
-  <div className="flex flex-col md:flex-row justify-between w-full md:w-1/2 h-24  rounded-lg bg-white items-center p-2 space-y-4 md:space-y-0">
+    <div className="flex flex-col justify-between items-center bg-zinc-800 p-4">
+  <div className="flex flex-col md:flex-row justify-between w-full md:w-1/2 h-24  rounded-lg bg-zinc-400 items-center p-2 space-y-4 md:space-y-0">
     <button
       onClick={toggleForm}
       type="button"
-      className="flex justify-center items-center bg-blue-500 hover:bg-blue-700 text-white font-bold py-1 px-5 rounded-lg transition duration-500 ease-in-out transform hover:-translate-y-1 hover:scale-110"
+      className="flex justify-center items-center bg-blue-400 hover:bg-blue-700 text-white font-bold py-1 px-5 rounded-lg transition duration-500 ease-in-out transform hover:-translate-y-1 hover:scale-110"
     >
       <div className="bg-slate-600 rounded-full p-1 mr-2">
         <FaPlus />
