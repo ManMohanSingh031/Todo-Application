@@ -11,7 +11,7 @@ npm install
 
 npm run dev
 
-This will start the development server and you can view your project by opening http://localhost:5000 in your web browser.
+This will start the development server and you can view your project by opening http://localhost:5173 in your web browser.
 
 If you want to run the project in production mode, you can build the project and then serve it. Here’s how you can do it:
 
