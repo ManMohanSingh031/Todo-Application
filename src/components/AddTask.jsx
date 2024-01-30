@@ -57,24 +57,24 @@ const AddTask = ({ onAddTask, filter, onFilterChange }) => {
                 onSubmit={handleSubmit}
                 className="p-4 flex flex-col items-center w-full h-full rounded-lg"
               >
-                <label className="w-full">
+                <label className="w-full text-white ">
                   Task Name:
                   <input
                     type="text"
                     name="name"
                     value={taskName}
                     onChange={(e) => setTaskName(e.target.value)}
-                    className="ml-0 mt-2 w-full h-8 rounded-lg"
+                    className="ml-0 mt-2 w-full h-8 rounded-lg text-black"
                   />
                 </label>
-                <label className="w-full mt-4">
+                <label className="w-full mt-4 text-white ">
                   Task Description:
                   <input
                     type="text"
                     name="desc"
                     value={taskDesc}
                     onChange={(e) => setTaskDesc(e.target.value)}
-                    className="ml-0 mt-2 w-full h-8 rounded-lg"
+                    className="ml-0 mt-2 w-full h-8 rounded-lg  text-black"
                   />
                 </label>
                 <input

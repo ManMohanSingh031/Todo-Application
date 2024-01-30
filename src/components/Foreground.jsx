@@ -43,13 +43,14 @@ const Foreground = () => {
 
   return (
     <>
-       <AddTask
-        onAddTask={handleAddTask}
-        filter={filter}
-        onFilterChange={handleFilterChange}
-      />
-      <div ref={ref} className="flex flex-wrap justify-center bg-zinc-800 p-4 gap-20" style={{minHeight: '100vh'}}>
-        {tasks
+    <AddTask
+      onAddTask={handleAddTask}
+      filter={filter}
+      onFilterChange={handleFilterChange}
+    />
+    <div ref={ref} className="flex flex-wrap justify-center bg-zinc-800 p-4 gap-20 min-h-screen">
+      {tasks.length > 0 ? (
+        tasks
           .filter((task) => filter === "All" || task.status === filter)
           .map((item, index) => (
             <Card
@@ -62,10 +63,16 @@ const Foreground = () => {
               }
               reference= {ref}
             />
-          ))}
-      
-      </div>
-    </>
+          ))
+      ) : (
+        <div className="h-screen">
+  <div className="flex items-center justify-center h-full w-full">
+    <h1 className="text-8xl font-bold underline">Task Tracker</h1>
+  </div>
+</div>
+      )}
+    </div>
+  </>
   );
 };
 
