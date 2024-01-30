@@ -67,7 +67,7 @@ const Foreground = () => {
       ) : (
         <div className="h-screen">
   <div className="flex items-center justify-center h-full w-full">
-    <h1 className="text-8xl font-bold underline">Task Tracker</h1>
+    <h1 className="text-8xl font-bold selection:touch-none">Task Tracker</h1>
   </div>
 </div>
       )}
