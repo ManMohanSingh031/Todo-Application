@@ -31,7 +31,7 @@ const AddTask = ({ onAddTask, filter, onFilterChange }) => {
     <button
       onClick={toggleForm}
       type="button"
-      className="flex justify-center items-center bg-blue-500 hover:bg-blue-700 text-white font-bold py-1 px-6 rounded-lg transition duration-500 ease-in-out transform hover:-translate-y-1 hover:scale-110"
+      className="flex justify-center items-center bg-blue-500 hover:bg-blue-700 text-white font-bold py-1 px-5 rounded-lg transition duration-500 ease-in-out transform hover:-translate-y-1 hover:scale-110"
     >
       <div className="bg-slate-600 rounded-full p-1 mr-2">
         <FaPlus />
