@@ -1,9 +1,18 @@
 // Card.jsx
 import React, { useState } from "react";
 import { FaFileAlt, FaTrashAlt, FaEdit } from "react-icons/fa";
-import { motion } from "framer-motion"
+import { motion } from "framer-motion";
 
-function Card({ name, desc, status, date, onDelete, onEdit, onStatusChange, reference }) {
+function Card({
+  name,
+  desc,
+  status,
+  date,
+  onDelete,
+  onEdit,
+  onStatusChange,
+  reference,
+}) {
   const [taskStatus, setTaskStatus] = useState(status);
   const [isEditing, setIsEditing] = useState(false);
   const [newDesc, setNewDesc] = useState(desc);
@@ -31,7 +40,12 @@ function Card({ name, desc, status, date, onDelete, onEdit, onStatusChange, refe
   };
 
   return (
-    <motion.div drag  dragConstraints={reference.current} whileDrag={{scale: 1.2}} className="relative flex-shrink-0 w-60 h-80 rounded-lg bg-zinc-600 text-white px-8 py-10 overflow-hidden flex flex-col">
+    <motion.div
+  drag
+  dragConstraints={reference}
+  whileDrag={{ scale: 1.2 }}
+  className="relative flex-shrink-0 w-full sm:w-60 h-80 rounded-lg bg-zinc-600 text-white px-8 py-10 overflow-hidden flex flex-col"
+>
       <div className="absolute top-4 right-4">
         <input
           type="checkbox"

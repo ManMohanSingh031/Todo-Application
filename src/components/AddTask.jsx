@@ -5,8 +5,8 @@ import TaskFilter from "./TaskFilter";
 
 const AddTask = ({ onAddTask, filter, onFilterChange }) => {
   const [isFormOpen, setIsFormOpen] = useState(false);
-  const [taskName, setTaskName] = useState('');
-  const [taskDesc, setTaskDesc] = useState('');
+  const [taskName, setTaskName] = useState("");
+  const [taskDesc, setTaskDesc] = useState("");
 
   const toggleForm = () => {
     setIsFormOpen(!isFormOpen);
@@ -14,15 +14,20 @@ const AddTask = ({ onAddTask, filter, onFilterChange }) => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    onAddTask({ name: taskName, desc: taskDesc, date: new Date().toLocaleString(), status: 'Incomplete' });
-    setTaskName('');
-    setTaskDesc('');
+    onAddTask({
+      name: taskName,
+      desc: taskDesc,
+      date: new Date().toLocaleString(),
+      status: "Incomplete",
+    });
+    setTaskName("");
+    setTaskDesc("");
     toggleForm();
   };
 
   return (
     <div className="flex flex-col justify-between items-center bg-gray-200 p-4">
-      <div className="flex justify-between w-1/2 h-16 rounded-lg bg-white items-center p-2">
+      <div className="flex justify-between w-full md:w-1/2 h-16 rounded-lg bg-white items-center p-2">
         <button
           onClick={toggleForm}
           type="button"
@@ -48,7 +53,10 @@ const AddTask = ({ onAddTask, filter, onFilterChange }) => {
               aria-hidden="true"
             ></div>
             <div className="inline-block align-bottom bg-zinc-700 rounded-lg text-left overflow-hidden shadow-xl transform transition-all sm:my-8 sm:align-middle sm:max-w-lg sm:w-full">
-              <form onSubmit={handleSubmit} className="p-4 flex flex-col items-center w-full h-full rounded-lg">
+              <form
+                onSubmit={handleSubmit}
+                className="p-4 flex flex-col items-center w-full h-full rounded-lg"
+              >
                 <label className="w-full">
                   Task Name:
                   <input
